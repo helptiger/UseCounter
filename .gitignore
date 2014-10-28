@@ -1,0 +1,17 @@
+.classpath
+.project
+.settings/
+nbproject/
+nbactions.xml
+nb-configuration.xml
+target/
+build/
+bin/
+dist/
+manifest.mf
+.DS_Store/
+*.iml
+*.ipr
+*.iws
+.idea/
+*.log*
