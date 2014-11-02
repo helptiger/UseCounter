@@ -5,3 +5,8 @@ author: maciekmm
 website: ${project.url}
 main: ${main.class}
 softdepend: [ImmortalCustom]
+commands:
+  countable:
+    description: Make item countable
+    usage: /<command> - makes item countable
+    permission: usecounter.countable

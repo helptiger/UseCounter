@@ -1,14 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>breakcounter</artifactId>
+    <artifactId>usecounter</artifactId>
     <version>0.2-SNAPSHOT</version>
     <groupId>net.maciekmm</groupId>
-    <name>BreakCounter</name>
+    <name>UseCounter</name>
     <description>Show how many blocks were broken in name.</description>
     <packaging>jar</packaging>
 
     <properties>
-        <main.class>net.maciekmm.breakcounter.BreakCounter</main.class>
+        <main.class>net.maciekmm.usecounter.UseCounter</main.class>
     </properties>
 
     <repositories>

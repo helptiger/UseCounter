@@ -1,2 +1,4 @@
+countOnlyOnPlayerKillsInSwords: true
 matcher: '\[(&[1-9a-f])?([0-9]+)(&[1-9a-f])?\]'
 group: 2
+defaultSuffix: ' &8[&2{number}&8]'
