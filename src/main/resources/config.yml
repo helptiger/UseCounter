@@ -1,4 +1,8 @@
 countOnlyOnPlayerKillsInSwords: true
+addSuffixWhenCrafting: false
 matcher: '\[(&[1-9a-f])?([0-9]+)(&[1-9a-f])?\]'
 group: 2
 defaultSuffix: ' &8[&2{number}&8]'
+autoadd:
+  enabled: false
+  named: true

@@ -10,3 +10,15 @@ commands:
     description: Make item countable
     usage: /<command> - makes item countable
     permission: usecounter.countable
+permissions:
+  usecounter.player:
+    description: 
+    children:
+        usecounter.count: true
+        usecounter.countable: true
+  usecounter.count:
+    description: Allows player to have their breaks counted.
+    default: true
+  usecounter.countable:
+    description: Allows player to use /countable command to make item countable.
+    default: true
