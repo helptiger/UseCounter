@@ -41,7 +41,7 @@ public class UseCounter extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         this.saveDefaultConfig();
-        this.matcher = Pattern.compile(this.getConfig().getString("matcher", "\\[(&[1-9a-f])?([0-9]+)(&[1-9a-f])?\\]").replace('&', '§'));
+        this.matcher = Pattern.compile(this.getConfig().getString("matcher", "\\[(&[1-9a-f])?([0-9]+)(&[1-9a-f])?\\]").replace('&', 'ï¿½'));
         this.group = this.getConfig().getInt("group", 2);
         this.suffix = ChatColor.translateAlternateColorCodes('&', this.getConfig().getString("defaultSuffix", " &8[&2{number}&8]")).replace("{number}", "0");
         this.countOnlyOnPlayerKillsInSwords = this.getConfig().getBoolean("countOnlyOnPlayerKillsInSwords", true);
@@ -151,7 +151,7 @@ public class UseCounter extends JavaPlugin implements Listener {
             return Result.NOT_COUNTABLE;
         }
         
-        meta.setDisplayName(new StringBuilder(meta.getDisplayName()).replace(globalMatch.start(this.group), globalMatch.end(this.group), String.valueOf(Integer.valueOf(globalMatch.group(this.group)) + 1)).toString());
+        meta.setDisplayName(new StringBuilder(meta.getDisplayName()).replace(globalMatch.start(this.group), globalMatch.end(this.group), String.valueOf(Long.valueOf(globalMatch.group(this.group)) + 1)).toString());
         is.setItemMeta(meta);
         return Result.SUCCESS;
     }
