@@ -41,7 +41,7 @@ public class UseCounter extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         this.saveDefaultConfig();
-        this.matcher = Pattern.compile(this.getConfig().getString("matcher", "\\[(&[1-9a-f])?([0-9]+)(&[1-9a-f])?\\]").replace('&', '�'));
+        this.matcher = Pattern.compile(this.getConfig().getString("matcher", "\\[(&[1-9a-f])?([0-9]+)(&[1-9a-f])?\\]").replace('&', '§'));
         this.group = this.getConfig().getInt("group", 2);
         this.suffix = ChatColor.translateAlternateColorCodes('&', this.getConfig().getString("defaultSuffix", " &8[&2{number}&8]")).replace("{number}", "0");
         this.countOnlyOnPlayerKillsInSwords = this.getConfig().getBoolean("countOnlyOnPlayerKillsInSwords", true);
